@@ -1,171 +1,133 @@
-# 🙏 Centro Internacional de Avivamento Primavera (CIA)
+# 🌿 Centro Internacional de Avivamento – Primavera
 
-Plataforma web completa para gerenciamento de conteúdo, eventos e integração com redes sociais da Igreja CIA Primavera.
+Site institucional oficial da **Igreja Centro Internacional de Avivamento – Primavera**, desenvolvido com foco em performance, simplicidade e fácil manutenção.
 
-**Localização**: [Ver no Google Maps](https://maps.app.goo.gl/o86G64g28DMgyByh9)  
-**Telefone**: +55 31 9994-5139  
-**Instagram**: [@ciaonline_primavera](https://www.instagram.com/ciaonline_primavera)  
-**YouTube**: [@ciaprimaveraon3264](https://www.youtube.com/@ciaprimaveraon3264)
+Projeto **100% front-end**, sem backend, utilizando apenas integrações via embed (YouTube e Google Maps).
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📌 Visão Geral
 
-```
-CIA-PRIMAVERA/
-├── BackEnd/                 # Servidor Node.js + Express + tRPC
-│   ├── server/             # Lógica do servidor
-│   ├── drizzle/            # Migrações e schema do banco
-│   ├── shared/             # Código compartilhado
-│   ├── package.json
-│   └── README.md           # Instruções do BackEnd
+Este site tem como objetivo:
+
+- Apresentar a igreja e sua missão
+- Divulgar cultos, eventos e retiros
+- Exibir cultos e transmissões recentes do YouTube
+- Facilitar contato e localização da igreja
+- Ser simples de atualizar, sem servidor ou banco de dados
+
+---
+
+## 🧱 Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- Vite
+- PNPM
+- YouTube Embed (Playlist)
+- Vercel (Hospedagem)
+
+---
+
+## 📂 Estrutura do Projeto
+
+# 🌿 Centro Internacional de Avivamento – Primavera
+
+Site institucional oficial da **Igreja Centro Internacional de Avivamento – Primavera**, desenvolvido com foco em performance, simplicidade e fácil manutenção.
+
+Projeto **100% front-end**, sem backend, utilizando apenas integrações via embed (YouTube e Google Maps).
+
+---
+
+## 📌 Visão Geral
+
+Este site tem como objetivo:
+
+- Apresentar a igreja e sua missão
+- Divulgar cultos, eventos e retiros
+- Exibir cultos e transmissões recentes do YouTube
+- Facilitar contato e localização da igreja
+- Ser simples de atualizar, sem servidor ou banco de dados
+
+---
+
+## 🧱 Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- Vite
+- PNPM
+- YouTube Embed (Playlist)
+- Vercel (Hospedagem)
+
+---
+
+## 📂 Estrutura do Projeto
+
+FrontEnd/
+├── assets/
+│ ├── img/ # Imagens do site (igreja, retiro, eventos)
+│ ├── css/ # Estilos
+│ └── js/ # Scripts
 │
-├── FrontEnd/               # Aplicação React + Vite
-│   ├── client/             # Código React
-│   ├── vite.config.ts
-│   ├── components.json
-│   └── README.md           # Instruções do FrontEnd
+├── index.html
+├── main.js
+├── style.css
+├── vite.config.js
+├── package.json
+└── README.md
+
+FrontEnd/
+├── assets/
+│ ├── img/ # Imagens do site (igreja, retiro, eventos)
+│ ├── css/ # Estilos
+│ └── js/ # Scripts
 │
-├── README.md               # Este arquivo
-├── SETUP.md                # Guia de configuração completo
-└── .git/                   # Repositório Git
-```
+├── index.html
+├── main.js
+├── style.css
+├── vite.config.js
+├── package.json
+└── README.md
 
----
+Alterando essa variável, todos os vídeos do site são atualizados automaticamente.
 
-## 🚀 Quick Start
+🗺️ Localização
 
-### 1. BackEnd (Node.js + Express + Supabase)
+Mapa do Google via iframe
 
-```bash
-cd BackEnd
-pnpm install
-pnpm db:push
-pnpm dev
-```
+Marcador fixo da igreja
 
-O servidor rodará em `http://localhost:3000`
+Link direto para o Google Maps
 
-**Variáveis de Ambiente Necessárias**:
-- `SUPABASE_URL` - URL do projeto Supabase
-- `SUPABASE_ANON_KEY` - Chave anônima do Supabase
-- `SUPABASE_SERVICE_ROLE_KEY` - Chave de serviço do Supabase
-- `DATABASE_URL` - String de conexão do banco de dados
+Não utiliza API Key.
 
-### 2. FrontEnd (React + Vite)
+🏕️ Seção Retiro
 
-```bash
-cd FrontEnd
-pnpm install
-pnpm dev
-```
+A seção de retiro contém:
 
-A aplicação rodará em `http://localhost:5173`
+Cards com imagens
 
-**Variáveis de Ambiente Necessárias**:
-- `VITE_SUPABASE_URL` - URL do projeto Supabase
-- `VITE_SUPABASE_ANON_KEY` - Chave anônima do Supabase
+Botões de ação:
 
----
+Faça já sua inscrição
 
-## 📚 Documentação Detalhada
+Garanta sua camisa
 
-Para instruções completas de configuração, deploy e desenvolvimento, consulte:
+Fácil manutenção (basta trocar imagens e links)
 
-- **[SETUP.md](./SETUP.md)** - Guia passo a passo de configuração
-- **[BackEnd/README.md](./BackEnd/README.md)** - Documentação do servidor
-- **[FrontEnd/README.md](./FrontEnd/README.md)** - Documentação do frontend
+✏️ Como Atualizar Conteúdos
+Conteúdo	Onde alterar
+Cultos	Playlist do YouTube
+Textos	index.html
+Imagens	assets/img
+Estilos	style.css
+Links	HTML
+🙏 Sobre o Projeto
 
----
+Projeto desenvolvido para apoiar o ministério da igreja, facilitar a comunicação e alcançar mais pessoas através da internet.
 
-## ✨ Funcionalidades Principais
-
-### 🎬 Pregações e Lives
-- Integração automática com YouTube
-- Notificação quando há transmissão ao vivo
-- Galeria de pregações anteriores
-- Sincronização automática de novos vídeos
-
-### 📸 Instagram Integration
-- Exibição dos 3 últimos posts
-- Link direto para o perfil
-- Atualização automática
-
-### 🛍️ Gerenciamento de Conteúdo
-- Painel administrativo com login/senha
-- CRUD de seções, produtos e eventos
-- Upload de imagens via Supabase Storage
-- Edição em tempo real
-
-### 📅 Calendário de Eventos
-- Retiros, cultos e reuniões
-- Informações de data, hora e local
-- Capacidade de inscrição
-
-### 🛒 Loja de Produtos
-- Venda de camisetas e itens exclusivos
-- Gerenciamento de estoque
-- Integração com pagamentos (futuro)
-
----
-
-## 🔐 Autenticação
-
-O painel administrativo utiliza **Supabase Auth** com credenciais pré-configuradas:
-
-- **Email**: admin@ciaonlineprimavera.com
-- **Senha**: ADMcia2026#JC0**
-
-> ⚠️ **Segurança**: Altere a senha no Supabase após o primeiro login!
-
----
-
-## 🌐 Deploy
-
-### Frontend (Vercel)
-```bash
-cd FrontEnd
-vercel deploy
-```
-
-### Backend (Render)
-```bash
-cd BackEnd
-# Configure as variáveis de ambiente no Render
-# Deploy automático via Git
-```
-
-Consulte [SETUP.md](./SETUP.md) para instruções detalhadas de deploy.
-
----
-
-## 🛠️ Tech Stack
-
-| Camada | Tecnologia |
-|--------|-----------|
-| **Frontend** | React 19, Vite, Tailwind CSS, shadcn/ui |
-| **Backend** | Node.js, Express, tRPC, TypeScript |
-| **Banco de Dados** | Supabase (PostgreSQL) |
-| **Autenticação** | Supabase Auth |
-| **Storage** | Supabase Storage |
-| **Deploy** | Vercel (Frontend), Render (Backend) |
-
----
-
-## 📞 Suporte
-
-Para dúvidas ou problemas:
-
-- **Telefone**: +55 31 9994-5139
-- **Email**: contato@ciaprimavera.com
-- **Instagram**: [@ciaonline_primavera](https://www.instagram.com/ciaonline_primavera)
-
----
-
-## 📄 Licença
-
-© 2024 Centro Internacional de Avivamento Primavera. Todos os direitos reservados.
-
----
-
-**Desenvolvido com ❤️ para a comunidade CIA Primavera**
+"Este evangelho do Reino será pregado em todo o mundo."
+Mateus 24:14

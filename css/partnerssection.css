@@ -1,0 +1,118 @@
+/* =========================
+   SECTION BASE (ex-Parcerias)
+========================= */
+#partners {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Grid centralizado */
+.partners-grid {
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* =========================
+   CARD
+========================= */
+.partner-card {
+    width: 100%;
+    max-width: 260px;
+    background-color: var(--card-bg);
+    padding: 24px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    overflow: hidden;
+}
+
+.partner-card img {
+    max-width: 120px;
+    max-height: 80px;
+    object-fit: contain;
+    transition: transform 0.35s ease;
+}
+
+/* Hover */
+.partner-card:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 18px 35px rgba(108, 99, 255, 0.25);
+}
+
+.partner-card:hover img {
+    transform: scale(1.08);
+}
+
+/* =========================
+   CULTO / VÍDEO
+========================= */
+.culto-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Player principal e lista */
+.culto-player,
+.culto-lista {
+    height: 420px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+/* Iframes */
+.culto-player iframe,
+.culto-lista iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Lista com scroll */
+.culto-lista {
+    overflow-y: auto;
+}
+
+/* Scroll customizado */
+.culto-lista::-webkit-scrollbar {
+    width: 6px;
+}
+
+.culto-lista::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 900px) {
+    .partners-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .culto-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .culto-player,
+    .culto-lista {
+        height: 360px;
+    }
+}
+    
