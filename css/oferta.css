@@ -1,0 +1,81 @@
+/* ===== SEÇÃO OFERTA ===== */
+.oferta {
+  padding: 2rem 2rem;
+  background: #0f2027;
+  color: white;
+}
+
+.oferta-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== HEADER ===== */
+.oferta-header h2 {
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+
+.oferta-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ===== TEXTO ===== */
+.oferta-texto {
+  margin: 30px 0;
+}
+
+.oferta-texto p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* ===== BOTÃO PIX ===== */
+.btn-pix {
+  margin: 30px auto;
+  padding: 18px 32px;
+  border-radius: 14px;
+  border: none;
+  background: #00c853;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-pix:hover {
+  background: #00e676;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(0, 200, 83, 0.45);
+}
+
+/* ===== IMAGEM ===== */
+.oferta-imagem {
+  margin-top: 30px;
+}
+
+.oferta-imagem img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 600px) {
+  .oferta-container {
+    padding: 35px 20px;
+  }
+
+  .oferta-header h2 {
+    font-size: 2rem;
+  }
+}

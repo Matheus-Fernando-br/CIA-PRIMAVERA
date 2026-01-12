@@ -15,12 +15,13 @@ section {
     display: inline-block;
     position: relative;
     font-weight: 700;
+    margin-bottom: 2rem;
 }
 
 .section-title h2::after {
     content: '';
     position: absolute;
-    bottom: -15px;
+    bottom: -1px;
     left: 50%;
     transform: translateX(-50%);
     width: 100px;
